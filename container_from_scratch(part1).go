@@ -7,6 +7,9 @@ package main
 
 //import os
 import "os"
+//import fmt
+import "fmt"
+
 //creating a new function main
 func main() {
 
