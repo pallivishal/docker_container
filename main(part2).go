@@ -34,7 +34,7 @@ func run() {
 
 	fmt.Printf("Running %v \n", os.Args[2:])
 
-		cmd := exec.Command(os.Args[2:],os.Args[3:]...)
+		cmd := exec.Command(os.Args[2],os.Args[3:]...)
 
 		cmd.Stdin = os.Stdin
 
