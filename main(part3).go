@@ -41,7 +41,12 @@ func run() {
 		cmd.Stdout = os.Stdout
 
 		cmd.Stderr = os.Stderr
+		//creating namespaces
+		cmd.SysProcAttr = &syscall.SysProcAttr{
 
+			Cloneflags: syscall.CLONE_NEWUTS,
+
+		}
 		cmd.Run()
 
 }
