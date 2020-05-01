@@ -4,14 +4,14 @@ package main
 
 //docker                run image <cmd> <params>
 //go run main.go run              <cmd> <params>
-import(
 
+//import os
+import (
 	"os"
-	"fmt"
-	"os/exec"
+//import fmt
+ "fmt"
 )
 //creating a new function main
-
 func main() {
 
 	switch os.Args[1] {
@@ -29,21 +29,9 @@ func main() {
 	}
 
 //creating a new function run
-
 func run() {
 
 	fmt.Printf("Running %v \n", os.Args[2:])
-
-		cmd := exec.Command(os.Args[2:],os.Args[3:]...)
-
-		cmd.Stdin = os.Stdin
-
-		cmd.Stdout = os.Stdout
-
-		cmd.Stderr = os.Stderr
-
-		cmd.Run()
-
 }
 
 //creating  a function must
