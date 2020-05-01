@@ -6,10 +6,11 @@ package main
 //go run main.go run              <cmd> <params>
 
 //import os
-import "os"
+import (
+	"os"
 //import fmt
-import "fmt"
-
+ "fmt"
+)
 //creating a new function main
 func main() {
 
